@@ -12,7 +12,7 @@
 
 ### 🔗 Credit
 - Original content and references belong to the respective platforms. 
-[Visit Website](https://example.com)
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">Visit Google Cloud Skills Boost</a>
 
 ---
 
