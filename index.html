@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt & Resource Hub</title>
+  <!-- Global rule: forces EVERY link on this page to open in a new tab -->
+  <base target="_blank">
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --border-color: #30363d;
+      --text-main: #c9d1d9;
+      --text-accent: #58a6ff;
+      --btn-bg: #21262d;
+      --btn-hover: #30363d;
+      --btn-active: #238636;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      color: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 28px 0 12px;
+      color: #f0f6fc;
+    }
+
+    /* Prompt Box Styling */
+    .prompt-box {
+      position: relative;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .prompt-text {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.95rem;
+      color: #79c0ff;
+      white-space: pre-wrap;
+      word-break: break-word;
+      padding-right: 70px;
+    }
+
+    /* Copy Button */
+    .copy-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background-color: var(--btn-bg);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .copy-btn:hover {
+      background-color: var(--btn-hover);
+      border-color: #8b949e;
+    }
+
+    .copy-btn.copied {
+      background-color: var(--btn-active);
+      color: #ffffff;
+      border-color: var(--btn-active);
+    }
+
+    /* Links / Resources */
+    .link-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .resource-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-accent);
+      text-decoration: none;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .resource-link:hover {
+      border-color: var(--text-accent);
+      background-color: #1c2128;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Prompts & Quick Resources</h1>
+
+  <!-- PROMPT 1 -->
+  <h2>Prompt 1</h2>
+  <div class="prompt-box">
+    <button class="copy-btn" onclick="copyPrompt('p1', this)">Copy</button>
+    <div id="p1" class="prompt-text">You are my creative co-founder for a startup pitch competition called "Fund My Crazy," where students reimagine a piece of city infrastructure and pitch it as a fundable idea.
+
+Here is the
+THEME: [type your theme here — e.g. Roads & Transportation]
+ROUGH IDEA: [type your idea here in 2 lines]
+
+Your job: take my raw idea and turn it into a genuinely winning entry. Judges score on:
+- Vision (30%) — an extraordinary conceptual leap, not an incremental fix
+- Real-life Relevance (20%) — solves an actual, specific pain people feel
+- Future-Focused (15%) — solves tomorrow's problem today, not yesterday's
+- Execution (15%) — a real, doable plan, not just a daydream
+
+Do the following, in this exact structure:
+
+1. WHY THIS ELEMENT, WHY NOW (form-ready answer, ~60-80 words)
+1st point - A single bold, quotable sentence that sells the idea in a room in 3 seconds.
+2nd point - Write this as a direct answer I can paste into the submission form field "Why this element, why now?"
+
+2. WHAT DOES YOUR REIMAGINED CITY LOOK LIKE (form-ready answer, ~80-100 words)
+Paint the picture — how it works, what it feels like to use, described vividly enough that someone can visualize it without seeing the image yet.
+
+3. HOW GEMINI IS INTEGRATED (form-ready answer, ~60-80 words)
+Explain plausibly how Gemini would be used in the real system (e.g. reading patterns, understanding language/voice, predicting behavior, personalizing something) — specific enough to sound real, not generic AI buzzwords.
+
+4. WHY THIS MATTERS FOR THE FUTURE (form-ready answer, ~60-80 words)
+Explain who it helps, how it fits into cities, and what makes it a believable reality rather than just a cool concept.
+
+5. NANO BANANA IMAGE PROMPT
+Write one ready-to-paste image generation prompt, following this exact formula:
+- title on the image(looks good)
+- Name the exact element being reimagined
+- Specify its function, vibe, and energy (how it should feel to use)
+- Say who it's for and the emotion they feel using it
+- End with the 1-2 line bold claim from step 8
+Write it as flowing descriptive prose (not a bullet list) suitable for direct image generation, emphasizing visual details: setting, lighting, people, technology visible, mood.
+
+Keep everything sharp, specific, and free of generic AI/startup clichés like "revolutionize," "seamless," "cutting-edge." Sound like a smart, slightly obsessive student who has actually thought this through — not a corporate brochure.
+</div>
+  </div>
+
+  <!-- PROMPT 2 -->
+  <h2>Prompt 2</h2>
+  <div class="prompt-box">
+    <button class="copy-btn" onclick="copyPrompt('p2', this)">Copy</button>
+    <div id="p2" class="prompt-text">You are my creative co-founder for a startup pitch competition called 
+"Fund My Crazy," where students reimagine a piece of city infrastructure 
+or system and pitch it as a fundable idea.
+
+I don't have an idea yet. We'll do this in two stages — do NOT skip 
+ahead to Stage 2 until I tell you which idea I'm picking.
+
+CITY: Chennai, India
+THEMES TO PULL FROM: Roads & Transportation, Community & Living, 
+Healthcare, Education, Markets (or "Surprise Us" if something 
+genuinely wild fits none of these)
+
+Judges score on:
+- Vision (30%) — an extraordinary conceptual leap, not an incremental fix
+- Real-life Relevance (20%) — solves an actual, specific pain people feel
+- Future-Focused (15%) — solves tomorrow's problem today, not yesterday's
+- Execution (15%) — a real, doable plan, not just a daydream
+
+============================================================
+STAGE 1 — GENERATE 3 IDEAS
+============================================================
+Give me 3 distinct ideas, each rooted in a real, specific problem 
+Chennai residents actually deal with (traffic, flooding, waste, heat, 
+water scarcity, healthcare access, informal markets, power cuts, 
+etc. — pick whichever gives the sharpest idea per concept, don't 
+force every idea into the same bucket).
+
+For each idea give me:
+1. A one-line hook with its theme
+2. The specific pain point it kills — name the street, season, 
+   neighborhood, or group of people. No vague generalities.
+3. The conceptual leap — what makes this a genuine reimagining, 
+   not a patch on the current system
+4. A 3-4 sentence gut-check on feasibility — could this actually 
+   be piloted, and roughly how
+
+Rank the 3 by how likely they are to win, and say why the top one wins.
+
+Then STOP and ask me: "Which one — 1, 2, or 3?"
+
+============================================================
+STAGE 2 — FULL SUBMISSION (only after I reply with 1, 2, or 3)
+============================================================
+Once I pick, take that idea and build the complete, form-ready 
+submission in this exact structure:
+
+1. WHY THIS ELEMENT, WHY NOW (~60-80 words)
+   Open with a single bold, quotable sentence that sells the idea 
+   in a room in 3 seconds. Then write the rest as a direct answer 
+   I can paste into the submission field "Why this element, why now?"
+
+2. WHAT DOES YOUR REIMAGINED CITY LOOK LIKE (~80-100 words)
+   Paint the picture — how it works, what it feels like to use, 
+   vivid enough that someone can visualize it without seeing an 
+   image yet.
+
+3. HOW GEMINI IS INTEGRATED (~60-80 words)
+   Explain plausibly how Gemini would power the real system — 
+   e.g. reading patterns, understanding voice/language, predicting 
+   behavior, personalizing something. Specific enough to sound 
+   real, not generic AI buzzwords.
+
+4. WHY THIS MATTERS FOR THE FUTURE (~60-80 words)
+   Who it helps, how it fits into cities, what makes it a believable 
+   reality rather than just a cool concept.
+
+5. NANO BANANA IMAGE PROMPT
+   One ready-to-paste image generation prompt, written as flowing 
+   descriptive prose (not bullets), covering:
+   - A title to render on the image
+   - The exact element being reimagined
+   - Its function, vibe, and energy — how it feels to use
+   - Who it's for and the emotion they feel using it
+   - Ending with the bold one-line claim from section 1
+   Emphasize setting, lighting, people, visible technology, mood.
+
+============================================================
+TONE RULES (apply to everything, both stages)
+============================================================
+- No generic AI/startup clichés: "revolutionize," "seamless," 
+  "cutting-edge," "empower," "game-changing," "disrupt"
+- Sound like a smart, slightly obsessive student who has actually 
+  walked these streets and thought this through — not a corporate 
+  brochure
+- Be specific over impressive. A concrete detail beats a grand claim
+- Push back and tighten anything vague rather than padding it
+
+</div>
+  </div>
+
+  <!-- LINKS -->
+  <h2>Important Links</h2>
+  <ul class="link-list">
+    <li>
+      <a href="https://example.com/docs" class="https://producttrialsurvey.geministudentambassador.com/" rel="noopener noreferrer">
+        🔗 Resource 1: PRE SURVEY
+      </a>
+    </li>
+    <li>
+      <a href="https://example.com/dashboard" class="https://enter.fundmycrazy.com/" rel="noopener noreferrer">
+        🔗 Resource 2: POST SURVEY
+      </a>
+    </li>
+  </ul>
+
+  <!-- JAVASCRIPT FOR COPY FUNCTIONALITY -->
+  <script>
+    function copyPrompt(elementId, btn) {
+      const textToCopy = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        btn.textContent = "Copied!";
+        btn.classList.add("copied");
+        setTimeout(() => {
+          btn.textContent = "Copy";
+          btn.classList.remove("copied");
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
