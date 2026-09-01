@@ -221,17 +221,30 @@ Keep everything sharp, specific, and free of generic AI/startup clichés like "r
   <h2>AND JST SELECT 1 OR 2 OR 3 </h2>
   <div class="prompt-box">
     <button class="copy-btn" onclick="copyPrompt('p2', this)">Copy</button>
-    <div id="p2" class="prompt-text">You are my creative co-founder for a startup pitch competition called 
-"Fund My Crazy," where students reimagine a piece of city infrastructure 
+    <div id="p2" class="prompt-text">
+      You are my creative co-founder for a startup pitch competition called 
+"Fund My Crazy," where students reimagine a piece of city infrastructure 
 or system and pitch it as a fundable idea.
 
-I don't have an idea yet. We'll do this in two stages — do NOT skip 
+I don't have an idea yet. We'll do this in two stages — do NOT skip 
 ahead to Stage 2 until I tell you which idea I'm picking.
 
 CITY: Chennai, India
-THEMES TO PULL FROM: Roads & Transportation, Community & Living, 
-Healthcare, Education, Markets (or "Surprise Us" if something 
+THEMES TO PULL FROM: Roads & Transportation, Community & Living, 
+Healthcare, Education, Markets (or "Surprise Us" if something 
 genuinely wild fits none of these)
+
+RANDOM SEED (use these to bend your thinking away from your default 
+answers — don't force them literally into the idea, use them as a 
+lens or constraint):
+- Random object: [pick any everyday object — auto rickshaw meter, 
+  streetlight, water can, umbrella, tiffin box, SIM card, etc.]
+- Random emotion: [pick one — impatience, pride, suspicion, relief, 
+  boredom, grief, nostalgia]
+- Random constraint: [pick one — must work without smartphones, must 
+  work during a power cut, must work for someone who is illiterate, 
+  must cost under ₹50/month, must work for a person who just moved 
+  to the city]
 
 Judges score on:
 - Vision (30%) — an extraordinary conceptual leap, not an incremental fix
@@ -240,22 +253,35 @@ Judges score on:
 - Execution (15%) — a real, doable plan, not just a daydream
 
 ============================================================
+STAGE 0 — ANTI-OBVIOUSNESS CHECK (do this silently, don't show me)
+============================================================
+Before generating ideas, privately list the 5 most predictable, 
+most-commonly-suggested ideas for this theme in an Indian city 
+(e.g. for Roads & Transportation: smart traffic lights, app-based 
+pothole reporting, EV charging network, carpooling app, AI traffic 
+signal). Do NOT pitch me any of these or close variants of them. 
+Your 3 ideas below must sit clearly outside that obvious cluster — 
+if an idea sounds like something a hundred other students would 
+also type into ChatGPT, discard it and go stranger.
+
+============================================================
 STAGE 1 — GENERATE 3 IDEAS
 ============================================================
-Give me 3 distinct ideas, each rooted in a real, specific problem 
-Chennai residents actually deal with (traffic, flooding, waste, heat, 
-water scarcity, healthcare access, informal markets, power cuts, 
-etc. — pick whichever gives the sharpest idea per concept, don't 
-force every idea into the same bucket).
+Give me 3 distinct ideas(1 is from education), each rooted in a real, specific problem 
+Chennai residents actually deal with. Use the random seed above as 
+a genuine creative constraint on at least one of the three ideas — 
+let it warp the angle, not just decorate it.
 
 For each idea give me:
 1. A one-line hook with its theme
-2. The specific pain point it kills — name the street, season, 
-   neighborhood, or group of people. No vague generalities.
-3. The conceptual leap — what makes this a genuine reimagining, 
-   not a patch on the current system
-4. A 3-4 sentence gut-check on feasibility — could this actually 
-   be piloted, and roughly how
+2. The specific pain point it kills — name the street, season, 
+   neighborhood, or group of people. No vague generalities.
+3. The conceptual leap — what makes this a genuine reimagining, 
+   not a patch on the current system
+4. A 3-4 sentence gut-check on feasibility — could this actually 
+   be piloted, and roughly how
+5. One sentence: why this WON'T be one of the top 5 obvious answers 
+   another student would submit
 
 Rank the 3 by how likely they are to win, and say why the top one wins.
 
@@ -264,47 +290,47 @@ Then STOP and ask me: "Which one — 1, 2, or 3?"
 ============================================================
 STAGE 2 — FULL SUBMISSION (only after I reply with 1, 2, or 3)
 ============================================================
-Once I pick, take that idea and build the complete, form-ready 
+Once I pick, take that idea and build the complete, form-ready 
 submission in this exact structure:
 
 1. WHY THIS ELEMENT, WHY NOW (~60-80 words)
-   Open with a single bold, quotable sentence that sells the idea 
-   in a room in 3 seconds. Then write the rest as a direct answer 
-   I can paste into the submission field "Why this element, why now?"
+   Open with a single bold, quotable sentence that sells the idea 
+   in a room in 3 seconds. Then write the rest as a direct answer 
+   I can paste into the submission field "Why this element, why now?"
 
 2. WHAT DOES YOUR REIMAGINED CITY LOOK LIKE (~80-100 words)
-   Paint the picture — how it works, what it feels like to use, 
-   vivid enough that someone can visualize it without seeing an 
-   image yet.
+   Paint the picture — how it works, what it feels like to use, 
+   vivid enough that someone can visualize it without seeing an 
+   image yet.
 
 3. HOW GEMINI IS INTEGRATED (~60-80 words)
-   Explain plausibly how Gemini would power the real system — 
-   e.g. reading patterns, understanding voice/language, predicting 
-   behavior, personalizing something. Specific enough to sound 
-   real, not generic AI buzzwords.
+   Explain plausibly how Gemini would power the real system — 
+   e.g. reading patterns, understanding voice/language, predicting 
+   behavior, personalizing something. Specific enough to sound 
+   real, not generic AI buzzwords.
 
 4. WHY THIS MATTERS FOR THE FUTURE (~60-80 words)
-   Who it helps, how it fits into cities, what makes it a believable 
-   reality rather than just a cool concept.
+   Who it helps, how it fits into cities, what makes it a believable 
+   reality rather than just a cool concept.
 
 5. NANO BANANA IMAGE PROMPT
-   One ready-to-paste image generation prompt, written as flowing 
-   descriptive prose (not bullets), covering:
-   - A title to render on the image
-   - The exact element being reimagined
-   - Its function, vibe, and energy — how it feels to use
-   - Who it's for and the emotion they feel using it
-   - Ending with the bold one-line claim from section 1
-   Emphasize setting, lighting, people, visible technology, mood.
+   One ready-to-paste image generation prompt, written as flowing 
+   descriptive prose (not bullets), covering:
+   - A title to render on the image
+   - The exact element being reimagined
+   - Its function, vibe, and energy — how it feels to use
+   - Who it's for and the emotion they feel using it
+   - Ending with the bold one-line claim from section 1
+   Emphasize setting, lighting, people, visible technology, mood.
 
 ============================================================
 TONE RULES (apply to everything, both stages)
 ============================================================
-- No generic AI/startup clichés: "revolutionize," "seamless," 
-  "cutting-edge," "empower," "game-changing," "disrupt"
-- Sound like a smart, slightly obsessive student who has actually 
-  walked these streets and thought this through — not a corporate 
-  brochure
+- No generic AI/startup clichés: "revolutionize," "seamless," 
+  "cutting-edge," "empower," "game-changing," "disrupt"
+- Sound like a smart, slightly obsessive student who has actually 
+  walked these streets and thought this through — not a corporate 
+  brochure
 - Be specific over impressive. A concrete detail beats a grand claim
 - Push back and tighten anything vague rather than padding it
 
